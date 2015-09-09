@@ -22,7 +22,7 @@
       <p ng-show="searchCtrl.searchTerm">You searched for: {{searchCtrl.searchTerm}}</p>
       <ul class="list-group" ng-show="searchCtrl.searchTerm">
         <li ng-repeat="user in searchCtrl.searchResult.items">
-          <img ng-src="{{user.avatar_url}}&s=50">
+          <img ng-src="{{user.avatar_url}}" height="50px" width="50px">
           <a ng-href="{{user.html_url}}">{{user.login}}</a>
         </li>
       </ul>
